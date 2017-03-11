@@ -1,0 +1,16 @@
+[
+{
+  "modid": "calculations",
+  "name": "Calculations",
+  "description": "A clientside mod that provides a fully functional calculator interface.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ChaosTheDude"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
