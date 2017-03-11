@@ -204,7 +204,7 @@ public class GuiTerminal extends Gui {
 			error();
 		}
 	}
-	
+
 	public boolean hasTerm() {
 		return !term.isEmpty();
 	}

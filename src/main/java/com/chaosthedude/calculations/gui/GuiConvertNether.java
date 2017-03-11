@@ -75,7 +75,8 @@ public class GuiConvertNether extends GuiScreen {
 		}
 
 		if (overworldY.isValid() && overworldY.isFocused()) {
-			netherY.setText(String.valueOf((int) MathHelper.clamp(Math.floor(Integer.valueOf(overworldY.getText())), 0, 128)));
+			netherY.setText(String.valueOf((int) MathHelper
+					.clamp_int(MathHelper.floor_double(Integer.valueOf(overworldY.getText())), 0, 128)));
 		}
 
 		if (overworldZ.isValid() && overworldZ.isFocused()) {
@@ -87,7 +88,8 @@ public class GuiConvertNether extends GuiScreen {
 		}
 
 		if (netherY.isValid() && netherY.isFocused()) {
-			overworldY.setText(String.valueOf((int) MathHelper.clamp(Math.floor(Integer.valueOf(netherY.getText())), 0, 255)));
+			overworldY.setText(String.valueOf(
+					(int) MathHelper.clamp_int(MathHelper.floor_double(Integer.valueOf(netherY.getText())), 0, 255)));
 		}
 
 		if (netherZ.isValid() && netherZ.isFocused()) {
@@ -160,11 +162,11 @@ public class GuiConvertNether extends GuiScreen {
 	}
 
 	private int toNether(double x) {
-		return MathHelper.floor(x / 8);
+		return MathHelper.floor_double(x / 8);
 	}
 
 	private int toOverworld(double x) {
-		return MathHelper.clamp(MathHelper.floor(x * 8), -29999872, 29999872);
+		return MathHelper.clamp_int(MathHelper.floor_double(x * 8), -29999872, 29999872);
 	}
 
 }

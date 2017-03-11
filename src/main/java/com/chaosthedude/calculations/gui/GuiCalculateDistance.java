@@ -61,13 +61,13 @@ public class GuiCalculateDistance extends GuiScreen {
 		yTextField.textboxKeyTyped(typedChar, keyCode);
 		zTextField.textboxKeyTyped(typedChar, keyCode);
 
-		final int x = xTextField.isValid() ? Integer.valueOf(xTextField.getText()) : (int) mc.player.posX;
-		final int y = yTextField.isValid() ? Integer.valueOf(yTextField.getText()) : (int) mc.player.posY;
-		final int z = zTextField.isValid() ? Integer.valueOf(zTextField.getText()) : (int) mc.player.posZ;
+		final int x = xTextField.isValid() ? Integer.valueOf(xTextField.getText()) : (int) mc.thePlayer.posX;
+		final int y = yTextField.isValid() ? Integer.valueOf(yTextField.getText()) : (int) mc.thePlayer.posY;
+		final int z = zTextField.isValid() ? Integer.valueOf(zTextField.getText()) : (int) mc.thePlayer.posZ;
 
-		final double xDelta = mc.player.posX - x;
-		final double yDelta = mc.player.posY - y;
-		final double zDelta = mc.player.posZ - z;
+		final double xDelta = mc.thePlayer.posX - x;
+		final double yDelta = mc.thePlayer.posY - y;
+		final double zDelta = mc.thePlayer.posZ - z;
 
 		distance = (int) Math.sqrt(xDelta * xDelta + yDelta * yDelta + zDelta * zDelta);
 	}

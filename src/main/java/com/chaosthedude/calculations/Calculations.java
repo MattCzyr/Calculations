@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Calculations.MODID, name = Calculations.NAME, version = Calculations.VERSION, acceptedMinecraftVersions = "[1.11,1.11.2]")
+@Mod(modid = Calculations.MODID, name = Calculations.NAME, version = Calculations.VERSION, acceptedMinecraftVersions = "[1.10,1.10.2]")
 
 public class Calculations {
 
