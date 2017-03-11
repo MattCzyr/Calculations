@@ -102,7 +102,7 @@ public class GuiConvertNether extends GuiScreen {
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		drawDefaultBackground();
-		drawCenteredString(fontRendererObj, I18n.format("calculations.convertNether"), width / 2, 25, 0xffffff);
+		drawCenteredString(fontRendererObj, I18n.format("calculations.convertNether"), width / 2, 15, 0xffffff);
 		drawCenteredString(fontRendererObj, I18n.format("string.overworld"), width / 2, 55, 0xffffff);
 		drawCenteredString(fontRendererObj, I18n.format("string.nether"), width / 2, 105, 0xffffff);
 
