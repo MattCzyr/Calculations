@@ -87,6 +87,8 @@ public class GuiTerminal extends Gui {
 			divide();
 		} else if (keyCode == Keyboard.KEY_RETURN || keyCode == Keyboard.KEY_NUMPADENTER) {
 			evaluate();
+		} else if (keyCode == Keyboard.KEY_BACK) {
+			back();
 		}
 	}
 
