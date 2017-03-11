@@ -66,6 +66,8 @@ public class GuiTerminal extends Gui {
 				insertTerm(8);
 			} else if (keyCode == Keyboard.KEY_9 || keyCode == Keyboard.KEY_NUMPAD9) {
 				insertTerm(9);
+			} else if (keyCode == Keyboard.KEY_PERIOD || keyCode == Keyboard.KEY_DECIMAL) {
+				insertPeriod();
 			} else if (keyCode == Keyboard.KEY_SUBTRACT) {
 				subtract();
 			} else if (keyCode == Keyboard.KEY_SLASH) {
@@ -139,7 +141,11 @@ public class GuiTerminal extends Gui {
 	}
 
 	public void insertPeriod() {
-		insertTerm(".");
+		if (!hasTerm() || hasOperator()) {
+			insertTerm("0.");
+		} else if (!term.contains(".")) {
+			insertTerm(".");
+		}
 	}
 
 	public void add() {
@@ -187,7 +193,6 @@ public class GuiTerminal extends Gui {
 	public void evaluate() {
 		try {
 			expression += term + operator;
-			System.out.println(expression);
 			final double result = new Expression(expression).eval().doubleValue();
 			clear();
 			if ((result % 1) == 0) {
