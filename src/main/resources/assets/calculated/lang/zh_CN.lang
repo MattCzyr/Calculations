@@ -13,7 +13,5 @@ key.openCalculator=打开计算器
 # STRINGS
 string.back=返回
 string.distance=距离
-string.divide=÷
-string.negate=±
 string.nether=下界
 string.overworld=主世界
