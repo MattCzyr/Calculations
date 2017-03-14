@@ -1,0 +1,19 @@
+# Calculations - Language File
+# SIMPLIFIED CHINESE - CHINESE MAINLAND
+
+# GUI
+calculations.calculator=计算器
+calculations.calculateDistance=距离计算
+calculations.convertNether=下界转换
+
+# KEYBINDS
+key.category.calculations=计算器
+key.openCalculator=打开计算器
+
+# STRINGS
+string.back=返回
+string.distance=距离
+string.divide=÷
+string.negate=±
+string.nether=下界
+string.overworld=主世界
