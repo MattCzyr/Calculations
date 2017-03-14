@@ -128,7 +128,7 @@ public class GuiCalculator extends GuiScreen {
 		buttonAllClear = addButton(new GuiTransparentButton(buttonID, width / 2 - 46, 70, 20, 20, "AC"));
 		buttonModulus = addButton(new GuiTransparentButton(buttonID, width / 2 - 22, 70, 20, 20, "%"));
 		buttonBackspace = addButton(new GuiTransparentButton(buttonID, width / 2 + 2, 70, 20, 20, "<"));
-		buttonDivide = addButton(new GuiTransparentButton(buttonID, width / 2 + 26, 70, 20, 20, I18n.format("string.divide")));
+		buttonDivide = addButton(new GuiTransparentButton(buttonID, width / 2 + 26, 70, 20, 20, "\u00f7"));
 		button7 = addButton(new GuiTransparentButton(7, width / 2 - 46, 94, 20, 20, "7"));
 		button8 = addButton(new GuiTransparentButton(8, width / 2 - 22, 94, 20, 20, "8"));
 		button9 = addButton(new GuiTransparentButton(9, width / 2 + 2, 94, 20, 20, "9"));
@@ -141,7 +141,7 @@ public class GuiCalculator extends GuiScreen {
 		button2 = addButton(new GuiTransparentButton(2, width / 2 - 22, 142, 20, 20, "2"));
 		button3 = addButton(new GuiTransparentButton(3, width / 2 + 2, 142, 20, 20, "3"));
 		buttonAdd = addButton(new GuiTransparentButton(buttonID, width / 2 + 26, 142, 20, 20, "+"));
-		buttonNegate = addButton(new GuiTransparentButton(buttonID, width / 2 - 46, 166, 20, 20, I18n.format("string.negate")));
+		buttonNegate = addButton(new GuiTransparentButton(buttonID, width / 2 - 46, 166, 20, 20, "\u00b1"));
 		button0 = addButton(new GuiTransparentButton(0, width / 2 - 22, 166, 20, 20, "0"));
 		buttonPeriod = addButton(new GuiTransparentButton(buttonID, width / 2 + 2, 166, 20, 20, "."));
 		buttonEquals = addButton(new GuiTransparentButton(buttonID, width / 2 + 26, 166, 20, 20, "="));
