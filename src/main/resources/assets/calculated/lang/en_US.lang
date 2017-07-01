@@ -7,7 +7,7 @@ calculations.calculateDistance=Calculate Distance
 calculations.convertNether=Convert Nether
 
 # KEYBINDS
-key.category.calculations=calculations
+key.category.calculations=Calculations
 key.openCalculator=Open Calculator
 
 # STRINGS

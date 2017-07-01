@@ -102,9 +102,9 @@ public class GuiConvertNether extends GuiScreen {
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		drawDefaultBackground();
-		drawCenteredString(fontRendererObj, I18n.format("calculations.convertNether"), width / 2, 15, 0xffffff);
-		drawCenteredString(fontRendererObj, I18n.format("string.overworld"), width / 2, 55, 0xffffff);
-		drawCenteredString(fontRendererObj, I18n.format("string.nether"), width / 2, 105, 0xffffff);
+		drawCenteredString(fontRenderer, I18n.format("calculations.convertNether"), width / 2, 15, 0xffffff);
+		drawCenteredString(fontRenderer, I18n.format("string.overworld"), width / 2, 55, 0xffffff);
+		drawCenteredString(fontRenderer, I18n.format("string.nether"), width / 2, 105, 0xffffff);
 
 		overworldX.drawTextBox();
 		overworldY.drawTextBox();
@@ -150,13 +150,13 @@ public class GuiConvertNether extends GuiScreen {
 	}
 
 	private void setupTextFields() {
-		overworldX = new GuiTransparentNumberField(0, fontRendererObj, width / 2 - 155, 70, 100, 20);
-		overworldY = new GuiTransparentNumberField(1, fontRendererObj, width / 2 - 50, 70, 100, 20);
-		overworldZ = new GuiTransparentNumberField(2, fontRendererObj, width / 2 + 55, 70, 100, 20);
+		overworldX = new GuiTransparentNumberField(0, fontRenderer, width / 2 - 155, 70, 100, 20);
+		overworldY = new GuiTransparentNumberField(1, fontRenderer, width / 2 - 50, 70, 100, 20);
+		overworldZ = new GuiTransparentNumberField(2, fontRenderer, width / 2 + 55, 70, 100, 20);
 
-		netherX = new GuiTransparentNumberField(3, fontRendererObj, width / 2 - 155, 120, 100, 20);
-		netherY = new GuiTransparentNumberField(4, fontRendererObj, width / 2 - 50, 120, 100, 20);
-		netherZ = new GuiTransparentNumberField(5, fontRendererObj, width / 2 + 55, 120, 100, 20);
+		netherX = new GuiTransparentNumberField(3, fontRenderer, width / 2 - 155, 120, 100, 20);
+		netherY = new GuiTransparentNumberField(4, fontRenderer, width / 2 - 50, 120, 100, 20);
+		netherZ = new GuiTransparentNumberField(5, fontRenderer, width / 2 + 55, 120, 100, 20);
 	}
 
 	private int toNether(double x) {

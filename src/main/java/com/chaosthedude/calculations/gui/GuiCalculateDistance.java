@@ -7,7 +7,6 @@ import org.lwjgl.input.Keyboard;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.util.math.BlockPos;
 
 public class GuiCalculateDistance extends GuiScreen {
 
@@ -76,13 +75,13 @@ public class GuiCalculateDistance extends GuiScreen {
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		drawDefaultBackground();
 
-		drawCenteredString(fontRendererObj, I18n.format("calculations.calculateDistance"), width / 2, 15, 0xffffff);
+		drawCenteredString(fontRenderer, I18n.format("calculations.calculateDistance"), width / 2, 15, 0xffffff);
 
 		xTextField.drawTextBox();
 		yTextField.drawTextBox();
 		zTextField.drawTextBox();
 
-		drawCenteredString(fontRendererObj, I18n.format("string.distance") + ": " + String.valueOf(distance), width / 2, 100, 0xffffff);
+		drawCenteredString(fontRenderer, I18n.format("string.distance") + ": " + String.valueOf(distance), width / 2, 100, 0xffffff);
 
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
@@ -112,9 +111,9 @@ public class GuiCalculateDistance extends GuiScreen {
 	}
 
 	private void setupTextFields() {
-		xTextField = new GuiTransparentNumberField(0, fontRendererObj, width / 2 - 155, 70, 100, 20);
-		yTextField = new GuiTransparentNumberField(1, fontRendererObj, width / 2 - 50, 70, 100, 20);
-		zTextField = new GuiTransparentNumberField(2, fontRendererObj, width / 2 + 55, 70, 100, 20);
+		xTextField = new GuiTransparentNumberField(0, fontRenderer, width / 2 - 155, 70, 100, 20);
+		yTextField = new GuiTransparentNumberField(1, fontRenderer, width / 2 - 50, 70, 100, 20);
+		zTextField = new GuiTransparentNumberField(2, fontRenderer, width / 2 + 55, 70, 100, 20);
 	}
 
 }

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 
 public class KeybindHandler {
 
-	private static KeyBinding openCalculator = new KeyBinding("key.openCalculator", Keyboard.KEY_C, "key.category.calculations");
+	private static KeyBinding openCalculator = new KeyBinding("key.openCalculator", Keyboard.KEY_V, "key.category.calculations");
 
 	private static final Minecraft mc = Minecraft.getMinecraft();
 
