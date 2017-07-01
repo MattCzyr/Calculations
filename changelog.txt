@@ -1,0 +1,19 @@
+-------------------------------------------------
+ VERSION 1.1.0 - 1.12
+-------------------------------------------------
+ 1.12:
+    FIXES:
+	- Changed calculator keybind from C to V to avoid conflict
+	UPDATES:
+	- First release for MC 1.12 (Forge #2387)
+
+
+-------------------------------------------------
+ VERSION 1.0.0 - 1.11.2, 1.10.2
+-------------------------------------------------
+ 1.11.2:
+    UPDATES:
+	- First release for MC 1.11.2 (Forge #2253)
+ 1.10.2:
+    UPDATES:
+	- First release for MC 1.10.2 (Forge #2254)
